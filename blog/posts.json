@@ -1,10 +1,3 @@
 [
-  {
-    "title": "Reading Sparse Autoencoder Features Without Fooling Yourself",
-    "date": "2026-06-20",
-    "platform": "own",
-    "slug": "reading-sae-features",
-    "excerpt": "Feature dashboards make SAE latents look more interpretable than they are. A short guide to the failure modes I keep running into, and the checks that catch them.",
-    "tags": ["Sparse Autoencoders", "Mechanistic Interpretability"]
-  }
+  
 ]
