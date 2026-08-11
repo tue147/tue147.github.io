@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post — Tue Minh Cao</title>
+  <meta name="description" content="" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ──────────────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../" class="nav-logo">Tue Minh Cao</a>
+    <ul class="nav-links">
+      <li><a href="../#about">About</a></li>
+      <li><a href="../#research">Research</a></li>
+      <li><a href="../#publications">Publications</a></li>
+      <li><a href="./" class="active">Blog</a></li>
+      <li><a href="../#mentoring">Mentoring</a></li>
+    </ul>
+    <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="post-nav">
+  <div class="container">
+    <a href="./" class="post-back">All posts</a>
+  </div>
+</div>
+
+<!-- Post content is rendered here from blog/posts/<slug>.md -->
+<main id="post-root">
+  <div class="container">
+    <p class="post-loading">Loading…</p>
+  </div>
+</main>
+
+<!-- ── Post footer ──────────────────────────────────────── -->
+<div class="container">
+  <div class="post-footer">
+    <span class="post-discuss">
+      Questions or comments?
+      <a href="mailto:caotue@ufl.edu">Email me</a> &middot;
+      <a href="https://www.lesswrong.com/users/tue-minh-cao" target="_blank" rel="noopener">LessWrong</a>
+    </span>
+    <a href="./" class="post-back">All posts</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">&copy; <span class="copyright-year"></span> Tue Minh Cao</span>
+    <div class="footer-links">
+      <a href="../">Home</a>
+      <a href="mailto:caotue@ufl.edu">Email</a>
+      <a href="https://scholar.google.com/citations?user=fQE5GQgAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/vendor/marked.min.js"></script>
+<script src="../js/blog.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

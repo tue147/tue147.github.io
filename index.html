@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tue Minh Cao — Mechanistic Interpretability &amp; AI Safety</title>
+  <meta name="description" content="PhD student at University of Florida researching mechanistic interpretability, sparse autoencoders, and AI safety." />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Tue Minh Cao — Mechanistic Interpretability &amp; AI Safety" />
+  <meta property="og:description" content="PhD student at University of Florida studying how large language models work from the inside." />
+  <meta property="og:type"        content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ──────────────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#about" class="nav-logo">Tue Minh Cao</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="#mentoring">Mentoring</a></li>
+    </ul>
+    <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── About ───────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-content">
+        <h1 class="about-name">Tue Minh Cao</h1>
+        <p class="about-title">PhD Student &middot; University of Florida</p>
+        <p class="about-subtitle">Mechanistic Interpretability &amp; AI Safety &middot; Advisor: Prof. My T. Thai</p>
+
+        <p class="about-statement">
+          My research develops methods to understand the internal mechanisms of large language models,
+          with the goal of making AI systems more transparent, predictable, and safe. I focus on two
+          complementary views of model internals: the <em>activation space</em> — via sparse autoencoders,
+          circuit tracing, and feature geometry — and the <em>weight space</em> — via weight decomposition
+          and weight-level steering. I believe that a unified understanding of activation and weight spaces
+          is a necessary foundation for mechanistic alignment.
+        </p>
+
+        <div class="about-links">
+          <!-- Email -->
+          <a href="mailto:caotue@ufl.edu" class="about-link" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            caotue@ufl.edu
+          </a>
+
+          <!-- Google Scholar -->
+          <a href="https://scholar.google.com/citations?user=fQE5GQgAAAAJ&hl=en" class="about-link" target="_blank" rel="noopener" title="Google Scholar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            Google Scholar
+          </a>
+
+          <!-- GitHub — update this link -->
+          <a href="https://github.com/tue147" class="about-link" target="_blank" rel="noopener" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            GitHub
+          </a>
+
+          <!-- Blog -->
+          <a href="blog/" class="about-link" title="Blog">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+              <polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/>
+            </svg>
+            Blog
+          </a>
+
+          <!-- CV -->
+          <a href="assets/cv.pdf" class="about-link" download title="Download CV">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+            CV
+          </a>
+        </div>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="about-stat-value">4</span>
+            <span class="about-stat-label">Papers (incl. 3 under review)</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-value">4.0</span>
+            <span class="about-stat-label">GPA at UF</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-value">7</span>
+            <span class="about-stat-label">Students mentored</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile photo: replace src with your photo path, e.g. assets/profile.jpg -->
+      <div class="about-photo-wrap">
+        <img src="assets/profile.jpg" alt="Tue Minh Cao" class="profile-photo" />
+        <!-- <div class="profile-placeholder" aria-hidden="true">TMC</div> -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── News ────────────────────────────────────────────── -->
+<section id="news">
+  <div class="container">
+    <p class="section-label">Updates</p>
+    <h2 class="section-title">News</h2>
+
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">Jun 2026</span>
+        <span class="news-text">
+          Three papers submitted and under review: two at <strong>NeurIPS 2026</strong> and one at <strong>EMNLP 2026</strong>, all within the first semester of the PhD program.
+          <span class="news-badge news-badge--new">New</span>
+        </span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Jan 2026</span>
+        <span class="news-text">
+          Started PhD at the <strong>University of Florida</strong>, Department of CISE, advised by
+          <a href="https://www.cise.ufl.edu/~mythai/" target="_blank" rel="noopener">Prof. My T. Thai</a>.
+        </span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Jan 2025</span>
+        <span class="news-text">
+          <a href="#publications">NeurFlow</a> accepted at <strong>ICLR 2025</strong> — published as an undergraduate student.
+          <span class="news-badge news-badge--pub">Publication</span>
+        </span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Sep 2021</span>
+        <span class="news-text">
+          Enrolled in the <strong>Talent CS Program</strong> at Hanoi University of Science and Technology (HUST).
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Research ─────────────────────────────────────────── -->
+<section id="research">
+  <div class="container">
+    <p class="section-label">Focus</p>
+    <h2 class="section-title">Research</h2>
+
+    <div class="research-interests">
+      <p class="subsection-label">Interests</p>
+      <div class="tags">
+        <span class="tag tag--accent">Mechanistic Interpretability</span>
+        <span class="tag tag--accent">Sparse Autoencoders</span>
+        <span class="tag tag--accent">Feature Geometry</span>
+        <span class="tag tag--accent">Circuit Analysis</span>
+        <span class="tag tag--accent">Weight Decomposition</span>
+        <span class="tag">AI Safety &amp; Alignment</span>
+        <span class="tag">Deception Detection</span>
+        <span class="tag">Hallucination in VLMs</span>
+        <span class="tag">Faithful Reasoning</span>
+        <span class="tag">Model Steering</span>
+      </div>
+    </div>
+
+    <p class="subsection-label" style="margin-bottom:0.75rem;">Current Projects</p>
+    <div class="projects-list">
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3 class="project-title">Semantic Optimal Transport for SAE Feature Matching &amp; Circuit Compression</h3>
+          <span class="project-status project-status--review">Under Review · NeurIPS 2026</span>
+        </div>
+        <p class="project-advisor">Advisor: Prof. My T. Thai (University of Florida)</p>
+        <p class="project-desc">
+          Matches semantically similar features distributed across all layers via optimal transport, enabling supernode clustering in circuit tracing (as in Anthropic's Neuropedia). Discovers modular feature groups sharing functional roles — including induction feature groups and bracket-detection groups — with theoretical guarantees on stability and optimality.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3 class="project-title">Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders</h3>
+          <span class="project-status project-status--review">Under Review · EMNLP 2026</span>
+        </div>
+        <p class="project-advisor">Advisors: Prof. My T. Thai (UF) &middot; Assoc. Prof. Le P. Nguyen (HUST)</p>
+        <p class="project-desc">
+          Identifies fundamental limitations in how existing SAEs define hierarchical features, then proposes the first tree-structured SAE that learns genuinely hierarchical feature pairs at multiple granularities. Demonstrates that the structure promotes hierarchical feature geometry in large language models.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3 class="project-title">Weight Decomposition for Hallucination Source Tracing in Vision-Language Models</h3>
+          <span class="project-status project-status--active">Active</span>
+        </div>
+        <p class="project-advisor">Advisor: Assoc. Prof. Le P. Nguyen (HUST) &middot; Team Lead</p>
+        <p class="project-desc">
+          Decomposes weight matrices to identify low-rank regions that encode prior knowledge driving object hallucination in VLMs. Shows that existing editing methods (ROME, MEMIT, Nullu) fail to localize prior knowledge and cause language collapse, while finetuning-based methods introduce new mechanisms rather than removing the hallucination source.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3 class="project-title">Systematic Benchmark for Activation Steering Methods</h3>
+          <span class="project-status project-status--active">Active</span>
+        </div>
+        <p class="project-advisor">Advisor: Assoc. Prof. Le P. Nguyen (HUST) &middot; Team Lead</p>
+        <p class="project-desc">
+          Constructs the first cross-evaluation benchmark for 30+ steering methods (weight steering, flow matching, representation finetuning, steering vectors, SAE-based steering), evaluated on alignment-relevant tasks including deception steering, refusal steering, and hallucination steering.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Publications ──────────────────────────────────────── -->
+<section id="publications">
+  <div class="container">
+    <p class="section-label">Work</p>
+    <h2 class="section-title">Publications &amp; Preprints</h2>
+
+    <div class="pub-list">
+
+      <!-- NeurFlow — ICLR 2025 -->
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-badge pub-badge--published">ICLR 2025</span>
+          <span class="pub-year">2025</span>
+        </div>
+        <h3 class="pub-title">
+          <a href="#" target="_blank" rel="noopener">
+            NeurFlow: Interpreting Neural Networks through Critical Neuron Groups and Functional Interactions
+          </a>
+        </h3>
+        <p class="pub-authors">
+          <strong>Tue M. Cao</strong>, Nhat H. Xuan, Le P. Nguyen, Hieu H. Pham, My T. Thai
+        </p>
+        <p class="pub-venue">International Conference on Learning Representations (ICLR), 2025</p>
+        <p class="pub-desc">
+          Identifies polysemanticity and low per-neuron contribution as fundamental limitations of neuron-level interpretability.
+          Proposes understanding model computation through functionally coupled neuron groups, traces group-level circuits
+          to map how decisions propagate through the model, and evaluates on a range of tasks.
+        </p>
+        <div class="pub-links">
+          <a href="#" class="pub-link" target="_blank" rel="noopener">Paper</a>
+          <a href="#" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          <a href="#" class="pub-link" target="_blank" rel="noopener">Code</a>
+          <a href="#" class="pub-link" target="_blank" rel="noopener">Slides</a>
+        </div>
+      </article>
+
+      <!-- Semantic OT — NeurIPS 2026 under review -->
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-badge pub-badge--review">NeurIPS 2026 (Under Review)</span>
+          <span class="pub-year">2026</span>
+        </div>
+        <h3 class="pub-title">
+          <a href="#" target="_blank" rel="noopener">
+            Semantic Optimal Transport for Sparse Autoencoder Feature Matching and Circuit Compression
+          </a>
+        </h3>
+        <p class="pub-authors">
+          <strong>Tue M. Cao</strong>, Nguyen Do, My T. Thai
+        </p>
+        <p class="pub-venue">Under review at Neural Information Processing Systems (NeurIPS), 2026</p>
+        <p class="pub-desc">
+          Matches semantically similar SAE features distributed across all layers via optimal transport,
+          enabling supernode clustering in circuit tracing (Anthropic's Neuropedia style). Tracks feature evolution
+          across layers and identifies modular groups with shared functional roles (e.g., induction features,
+          bracket detection). Provides theoretical guarantees for semantic Wasserstein score stability.
+        </p>
+        <div class="pub-links">
+          <a href="#" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          <a href="#" class="pub-link" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+      <!-- Tree SAE — EMNLP 2026 under review -->
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-badge pub-badge--review">EMNLP 2026 (Under Review)</span>
+          <span class="pub-year">2026</span>
+        </div>
+        <h3 class="pub-title">
+          <a href="#" target="_blank" rel="noopener">
+            Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders
+          </a>
+        </h3>
+        <p class="pub-authors">
+          <strong>Tue M. Cao</strong>, Nhat H. Xuan, Raed Alharbi, Le P. Nguyen, My T. Thai
+        </p>
+        <p class="pub-venue">Under review at Empirical Methods in Natural Language Processing (EMNLP), 2026</p>
+        <p class="pub-desc">
+          Identifies fundamental limitations of existing hierarchical feature definitions in sparse autoencoders
+          and proposes tree-structured SAEs that learn genuinely hierarchical features at multiple granularities.
+          Advances understanding of hierarchical concept geometry in LLMs while maintaining performance on key benchmarks.
+        </p>
+        <div class="pub-links">
+          <a href="#" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          <a href="#" class="pub-link" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+      <!-- ReSS — NeurIPS 2026 under review -->
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-badge pub-badge--review">NeurIPS 2026 (Under Review)</span>
+          <span class="pub-year">2026</span>
+        </div>
+        <h3 class="pub-title">
+          <a href="#" target="_blank" rel="noopener">
+            ReSS: Learning Reasoning Models for Tabular Data Prediction via Symbolic Scaffold
+          </a>
+        </h3>
+        <p class="pub-authors">
+          Chenlang Yi, Gang Li, Zizhan Xiong, <strong>Tue M. Cao</strong>, Yanmin Gong, My T. Thai, Tianbao Yang
+        </p>
+        <p class="pub-venue">Under review at Neural Information Processing Systems (NeurIPS), 2026</p>
+        <p class="pub-desc">
+          Faithful and explainable reasoning for tabular data prediction guided by decision trees.
+          Demonstrates that the generated reasoning traces are causally important, non-redundant, and less prone
+          to hallucination. Designed and evaluated faithfulness and causal sufficiency metrics.
+        </p>
+        <div class="pub-links">
+          <a href="#" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+        </div>
+      </article>
+
+      <!-- Multimodal Contrastive ECG — 2023 early work -->
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-badge pub-badge--preprint">arXiv Preprint</span>
+          <span class="pub-year">2023</span>
+        </div>
+        <h3 class="pub-title">
+          <a href="#" target="_blank" rel="noopener">
+            Multimodal Contrastive Learning for Diagnosing Cardiovascular Diseases from ECG Signals and Patient Metadata
+          </a>
+        </h3>
+        <p class="pub-authors">
+          <strong>Tue M. Cao</strong>, Nhat H. Tran, Phi Le Nguyen, Hieu H. Pham
+        </p>
+        <p class="pub-venue">arXiv preprint, 2023 &middot; 3 citations</p>
+        <p class="pub-desc">
+          Multimodal contrastive learning approach combining ECG time-series signals with patient metadata
+          for improved cardiovascular disease diagnosis.
+        </p>
+        <div class="pub-links">
+          <a href="#" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+        </div>
+      </article>
+
+      <!-- IncepSE — ISIC 2023 -->
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-badge pub-badge--early">ISIC 2023</span>
+          <span class="pub-year">2023</span>
+        </div>
+        <h3 class="pub-title">
+          <a href="#" target="_blank" rel="noopener">
+            IncepSE: Leveraging InceptionTime's Performance with Squeeze-and-Excitation Mechanism in ECG Analysis
+          </a>
+        </h3>
+        <p class="pub-authors">
+          <strong>Tue M. Cao</strong>, Nhat H. Tran, Le P. Nguyen, H. Nguyen, Hieu H. Pham
+        </p>
+        <p class="pub-venue">12th International Symposium on Information and Communications (ISIC), 2023 &middot; 4 citations</p>
+        <p class="pub-desc">
+          Integrates squeeze-and-excitation channel attention into InceptionTime for ECG classification,
+          improving performance on arrhythmia detection benchmarks.
+        </p>
+        <div class="pub-links">
+          <a href="#" class="pub-link" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Blog (preview) ────────────────────────────────────── -->
+<section id="blog">
+  <div class="container">
+    <p class="section-label">Writing</p>
+    <h2 class="section-title">Blog</h2>
+    <p class="blog-intro">
+      I write about mechanistic interpretability, AI safety, and my research findings.
+      Posts appear here and cross-posted on LessWrong and the AI Alignment Forum.
+    </p>
+
+    <!-- Cards are rendered from blog/posts.json by js/blog.js -->
+    <div id="blog-cards"></div>
+
+    <a href="blog/" class="blog-view-all">View all posts</a>
+  </div>
+</section>
+
+<!-- ── Mentoring ─────────────────────────────────────────── -->
+<section id="mentoring">
+  <div class="container">
+    <p class="section-label">Students</p>
+    <h2 class="section-title">Mentoring</h2>
+    <p class="mentoring-intro">
+      I enjoy working with motivated undergraduates on mechanistic interpretability and AI safety problems.
+      If you are interested in working together, feel free to <a href="mailto:caotue@ufl.edu">reach out</a>.
+    </p>
+
+    <div class="mentees-grid">
+      <div class="mentee-card">
+        <div class="mentee-name">Cong Pham</div>
+        <div class="mentee-affil">Undergraduate · Nanyang Technological University</div>
+      </div>
+      <div class="mentee-card">
+        <div class="mentee-name">Quoc Bao</div>
+        <div class="mentee-affil">Undergraduate · Hanoi University of Science &amp; Technology</div>
+      </div>
+      <div class="mentee-card">
+        <div class="mentee-name">Phong Quan</div>
+        <div class="mentee-affil">Undergraduate · Hanoi University of Science &amp; Technology</div>
+      </div>
+      <div class="mentee-card">
+        <div class="mentee-name">Hop Le</div>
+        <div class="mentee-affil">Undergraduate · Hanoi University of Science &amp; Technology</div>
+      </div>
+      <div class="mentee-card">
+        <div class="mentee-name">John Ronchet</div>
+        <div class="mentee-affil">Undergraduate · University of Florida</div>
+      </div>
+      <div class="mentee-card">
+        <div class="mentee-name">Dat Le</div>
+        <div class="mentee-affil">Undergraduate · University of Florida</div>
+      </div>
+      <div class="mentee-card">
+        <div class="mentee-name">Vinh Nguyen</div>
+        <div class="mentee-affil">Undergraduate · University of Florida</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">
+      &copy; <span class="copyright-year"></span> Tue Minh Cao &middot; Gainesville, FL
+    </span>
+    <div class="footer-links">
+      <a href="mailto:caotue@ufl.edu">Email</a>
+      <a href="https://scholar.google.com/citations?user=fQE5GQgAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://www.lesswrong.com/users/tue-minh-cao" target="_blank" rel="noopener">LessWrong</a>
+      <a href="assets/cv.pdf" download>CV</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/blog.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
