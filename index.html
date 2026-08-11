@@ -31,6 +31,7 @@
       <li><a href="#publications">Publications</a></li>
       <li><a href="blog/">Blog</a></li>
       <li><a href="#mentoring">Mentoring</a></li>
+      <li><a href="#honors">Honors</a></li>
     </ul>
     <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -83,6 +84,15 @@
             GitHub
           </a>
 
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/tuecm/" class="about-link" target="_blank" rel="noopener" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+            LinkedIn
+          </a>
+
           <!-- Blog -->
           <a href="blog/" class="about-link" title="Blog">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -103,8 +113,8 @@
 
         <div class="about-stats">
           <div class="about-stat">
-            <span class="about-stat-value">4</span>
-            <span class="about-stat-label">Papers (incl. 3 under review)</span>
+            <span class="about-stat-value">5</span>
+            <span class="about-stat-label">Papers &middot; 1 published, 4 in review</span>
           </div>
           <div class="about-stat">
             <span class="about-stat-value">4.0</span>
@@ -135,30 +145,46 @@
 
     <div class="news-list">
       <div class="news-item">
+        <span class="news-date">Jul 2026</span>
+        <span class="news-text">
+          Started leading three new projects on <strong>AI safety auditing</strong>: interpretable parameter
+          decomposition, misalignment localization in finetuned weights, and a self-reported misalignment adapter.
+          <span class="news-badge news-badge--new">New</span>
+        </span>
+      </div>
+      <div class="news-item">
         <span class="news-date">Jun 2026</span>
         <span class="news-text">
-          Three papers submitted and under review: two at <strong>NeurIPS 2026</strong> and one at <strong>EMNLP 2026</strong>, all within the first semester of the PhD program.
-          <span class="news-badge news-badge--new">New</span>
+          <a href="https://arxiv.org/abs/2606.17482" target="_blank" rel="noopener">Sphinx</a>
+          submitted to <strong>IEEE T-ITS</strong> — bringing the total to four papers under review
+          across NeurIPS, EMNLP, and T-ITS.
+        </span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">May 2026</span>
+        <span class="news-text">
+          Preprints released for
+          <a href="https://arxiv.org/abs/2605.28567" target="_blank" rel="noopener">Semantic Optimal Transport</a>
+          (NeurIPS 2026) and
+          <a href="https://arxiv.org/abs/2605.07922" target="_blank" rel="noopener">Tree SAE</a>
+          (EMNLP 2026).
+          <span class="news-badge news-badge--pub">Preprint</span>
         </span>
       </div>
       <div class="news-item">
         <span class="news-date">Jan 2026</span>
         <span class="news-text">
-          Started PhD at the <strong>University of Florida</strong>, Department of CISE, advised by
+          Started PhD at the <strong>University of Florida</strong> in the Adaptive Learning and
+          Optimization Lab, advised by
           <a href="https://www.cise.ufl.edu/~mythai/" target="_blank" rel="noopener">Prof. My T. Thai</a>.
         </span>
       </div>
       <div class="news-item">
         <span class="news-date">Jan 2025</span>
         <span class="news-text">
-          <a href="#publications">NeurFlow</a> accepted at <strong>ICLR 2025</strong> — published as an undergraduate student.
+          <a href="https://iclr.cc/virtual/2025/poster/30270" target="_blank" rel="noopener">NeurFlow</a>
+          accepted at <strong>ICLR 2025</strong> — published as an undergraduate student.
           <span class="news-badge news-badge--pub">Publication</span>
-        </span>
-      </div>
-      <div class="news-item">
-        <span class="news-date">Sep 2021</span>
-        <span class="news-text">
-          Enrolled in the <strong>Talent CS Program</strong> at Hanoi University of Science and Technology (HUST).
         </span>
       </div>
     </div>
@@ -176,14 +202,15 @@
       <div class="tags">
         <span class="tag tag--accent">Mechanistic Interpretability</span>
         <span class="tag tag--accent">Sparse Autoencoders</span>
-        <span class="tag tag--accent">Feature Geometry</span>
-        <span class="tag tag--accent">Circuit Analysis</span>
-        <span class="tag tag--accent">Weight Decomposition</span>
+        <span class="tag tag--accent">Model Auditing &amp; Evals</span>
+        <span class="tag tag--accent">Emergent Misalignment</span>
+        <span class="tag tag--accent">Weight &amp; Parameter Decomposition</span>
+        <span class="tag">Circuit Tracing</span>
+        <span class="tag">Feature Geometry</span>
+        <span class="tag">Activation &amp; Attribution Patching</span>
         <span class="tag">AI Safety &amp; Alignment</span>
-        <span class="tag">Deception Detection</span>
         <span class="tag">Hallucination in VLMs</span>
         <span class="tag">Faithful Reasoning</span>
-        <span class="tag">Model Steering</span>
       </div>
     </div>
 
@@ -192,45 +219,58 @@
 
       <div class="project-card">
         <div class="project-card-top">
-          <h3 class="project-title">Semantic Optimal Transport for SAE Feature Matching &amp; Circuit Compression</h3>
-          <span class="project-status project-status--review">Under Review · NeurIPS 2026</span>
+          <h3 class="project-title">Interpretable Parameter Decomposition via Activation-Space Supervision</h3>
+          <span class="project-status project-status--active">Project Lead</span>
         </div>
-        <p class="project-advisor">Advisor: Prof. My T. Thai (University of Florida)</p>
+        <p class="project-advisor">Adaptive Learning and Optimization Lab, University of Florida &middot; Jul 2026 – Present</p>
         <p class="project-desc">
-          Matches semantically similar features distributed across all layers via optimal transport, enabling supernode clustering in circuit tracing (as in Anthropic's Neuropedia). Discovers modular feature groups sharing functional roles — including induction feature groups and bracket-detection groups — with theoretical guarantees on stability and optimality.
+          Using the activation space to decompose weight space into interpretable components, by jointly
+          training parameter decomposition with a sparse autoencoder.
+          <strong>Result:</strong> raised the interpretability Intruder score of parameter decomposition
+          from 0.20 to 0.75 on a large model, over existing methods.
         </p>
       </div>
 
       <div class="project-card">
         <div class="project-card-top">
-          <h3 class="project-title">Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders</h3>
-          <span class="project-status project-status--review">Under Review · EMNLP 2026</span>
+          <h3 class="project-title">Misalignment Localization in Finetuned Weights</h3>
+          <span class="project-status project-status--active">Project Lead</span>
         </div>
-        <p class="project-advisor">Advisors: Prof. My T. Thai (UF) &middot; Assoc. Prof. Le P. Nguyen (HUST)</p>
+        <p class="project-advisor">Adaptive Learning and Optimization Lab, University of Florida &middot; Jul 2026 – Present</p>
         <p class="project-desc">
-          Identifies fundamental limitations in how existing SAEs define hierarchical features, then proposes the first tree-structured SAE that learns genuinely hierarchical feature pairs at multiple granularities. Demonstrates that the structure promotes hierarchical feature geometry in large language models.
+          Locating the mechanism inside finetuned weights responsible for emergently misaligned behaviour,
+          by aggregating gradients over behaviourally similar examples and decomposing them into sparse,
+          interpretable atoms. Attributions are validated with circuit tracing and activation/attribution patching.
         </p>
       </div>
 
       <div class="project-card">
         <div class="project-card-top">
-          <h3 class="project-title">Weight Decomposition for Hallucination Source Tracing in Vision-Language Models</h3>
-          <span class="project-status project-status--active">Active</span>
+          <h3 class="project-title">Self-Reported Misalignment Adapter</h3>
+          <span class="project-status project-status--active">Project Lead</span>
         </div>
-        <p class="project-advisor">Advisor: Assoc. Prof. Le P. Nguyen (HUST) &middot; Team Lead</p>
+        <p class="project-advisor">Adaptive Learning and Optimization Lab, University of Florida &middot; Jul 2026 – Present</p>
         <p class="project-desc">
-          Decomposes weight matrices to identify low-rank regions that encode prior knowledge driving object hallucination in VLMs. Shows that existing editing methods (ROME, MEMIT, Nullu) fail to localize prior knowledge and cause language collapse, while finetuning-based methods introduce new mechanisms rather than removing the hallucination source.
+          Auditing misalignment that lies outside the finetuning distribution, where behavioural testing on the
+          finetuning data gives no signal. An automated auditing agent elicits out-of-distribution misaligned
+          behaviour, and a model-agnostic LoRA adapter trained on it makes a finetuned model self-report
+          unforeseen misalignment. Evaluated on cross-domain transfer — eliciting confession of medical-domain
+          misalignment from a model finetuned only on misaligned code.
         </p>
       </div>
 
       <div class="project-card">
         <div class="project-card-top">
-          <h3 class="project-title">Systematic Benchmark for Activation Steering Methods</h3>
-          <span class="project-status project-status--active">Active</span>
+          <h3 class="project-title">Weight-Space Source of Object Hallucination in Vision-Language Models</h3>
+          <span class="project-status project-status--active">Project Lead</span>
         </div>
-        <p class="project-advisor">Advisor: Assoc. Prof. Le P. Nguyen (HUST) &middot; Team Lead</p>
+        <p class="project-advisor">AI4LIFE, Hanoi University of Science and Technology &middot; Sep 2025 – Present</p>
         <p class="project-desc">
-          Constructs the first cross-evaluation benchmark for 30+ steering methods (weight steering, flow matching, representation finetuning, steering vectors, SAE-based steering), evaluated on alignment-relevant tasks including deception steering, refusal steering, and hallucination steering.
+          Weight-space decomposition isolating the low-rank regions that encode the prior knowledge driving
+          object hallucination, validated with activation and attribution patching.
+          <strong>Result:</strong> established a negative result — prior-knowledge editing methods (ROME, MEMIT,
+          Nullu) fail to localize this knowledge and induce language collapse, while finetuning-based mitigation
+          introduces new mechanisms rather than removing the source.
         </p>
       </div>
 
@@ -246,7 +286,6 @@
 
     <div class="pub-list">
 
-      <!-- NeurFlow — ICLR 2025 -->
       <article class="pub-item">
         <div class="pub-meta">
           <span class="pub-badge pub-badge--published">ICLR 2025</span>
@@ -262,123 +301,173 @@
         </p>
         <p class="pub-venue">International Conference on Learning Representations (ICLR), 2025</p>
         <p class="pub-desc">
-          Identifies polysemanticity and low per-neuron contribution as fundamental limitations of neuron-level interpretability.
-          Proposes understanding model computation through functionally coupled neuron groups, traces group-level circuits
-          to map how decisions propagate through the model, and evaluates on a range of tasks.
+          Replaces the neuron with the neuron <em>group</em> as the unit of circuit analysis.
+          <strong>Result:</strong> patching a group of only 4 neurons removes a concept from the model,
+          while patching individual neurons does not — and the method surfaced background-bias circuits
+          in a vision model that existing approaches missed.
         </p>
         <div class="pub-links">
           <a href="https://openreview.net/forum?id=GdbQyFOUlJ" class="pub-link" target="_blank" rel="noopener">OpenReview</a>
+          <a href="https://iclr.cc/virtual/2025/poster/30270" class="pub-link" target="_blank" rel="noopener">ICLR Poster</a>
           <a href="https://arxiv.org/abs/2502.16105" class="pub-link" target="_blank" rel="noopener">arXiv</a>
-          <a href="https://arxiv.org/pdf/2502.16105" class="pub-link" target="_blank" rel="noopener">PDF</a>
         </div>
       </article>
 
-      <!-- Semantic OT — NeurIPS 2026 under review -->
       <article class="pub-item">
         <div class="pub-meta">
           <span class="pub-badge pub-badge--review">NeurIPS 2026 (Under Review)</span>
           <span class="pub-year">2026</span>
         </div>
         <h3 class="pub-title">
-          Semantic Optimal Transport for Sparse Autoencoder Feature Matching and Circuit Compression
+          <a href="https://arxiv.org/abs/2605.28567" target="_blank" rel="noopener">
+            Semantic Optimal Transport for Sparse Autoencoder Feature Matching and Circuit Compression
+          </a>
         </h3>
         <p class="pub-authors">
           <strong>Tue M. Cao</strong>, Nguyen Do, My T. Thai
         </p>
         <p class="pub-venue">Under review at Neural Information Processing Systems (NeurIPS), 2026</p>
         <p class="pub-desc">
-          Matches semantically similar SAE features distributed across all layers via optimal transport,
-          enabling supernode clustering in circuit tracing (Anthropic's Neuropedia style). Tracks feature evolution
-          across layers and identifies modular groups with shared functional roles (e.g., induction features,
-          bracket detection). Provides theoretical guarantees for semantic Wasserstein score stability.
+          Matches semantically equivalent SAE features across layers via optimal transport, enabling
+          automatic supernode compression of feature circuits under proven stability and
+          matching-optimality guarantees.
+          <strong>Result:</strong> compressed open-source Neuronpedia circuits to 10% of their original
+          size and improved matching performance by 20–30% over prior state of the art.
         </p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2605.28567" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://arxiv.org/pdf/2605.28567" class="pub-link" target="_blank" rel="noopener">PDF</a>
+        </div>
       </article>
 
-      <!-- Tree SAE — EMNLP 2026 under review -->
       <article class="pub-item">
         <div class="pub-meta">
           <span class="pub-badge pub-badge--review">EMNLP 2026 (Under Review)</span>
           <span class="pub-year">2026</span>
         </div>
         <h3 class="pub-title">
-          Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders
+          <a href="https://arxiv.org/abs/2605.07922" target="_blank" rel="noopener">
+            Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders
+          </a>
         </h3>
         <p class="pub-authors">
-          <strong>Tue M. Cao</strong>, Nhat H. Xuan, Raed Alharbi, Le P. Nguyen, My T. Thai
+          <strong>Tue M. Cao</strong>, Hoang X. Nhat, Raed Alharbi, Phi Le Nguyen, My T. Thai
         </p>
         <p class="pub-venue">Under review at Empirical Methods in Natural Language Processing (EMNLP), 2026</p>
         <p class="pub-desc">
-          Identifies fundamental limitations of existing hierarchical feature definitions in sparse autoencoders
-          and proposes tree-structured SAEs that learn genuinely hierarchical features at multiple granularities.
-          Advances understanding of hierarchical concept geometry in LLMs while maintaining performance on key benchmarks.
+          Shows that parent–child pairs in existing hierarchical SAEs do not actually share semantics,
+          then introduces a reconstruction-conditioned tree SAE that learns genuinely hierarchical features.
+          <strong>Result:</strong> hierarchical feature pairs over 40% more coherent than prior state of the
+          art, at matched absorption and feature-splitting scores.
         </p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2605.07922" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://arxiv.org/pdf/2605.07922" class="pub-link" target="_blank" rel="noopener">PDF</a>
+        </div>
       </article>
 
-      <!-- ReSS — NeurIPS 2026 under review -->
       <article class="pub-item">
         <div class="pub-meta">
           <span class="pub-badge pub-badge--review">NeurIPS 2026 (Under Review)</span>
           <span class="pub-year">2026</span>
         </div>
         <h3 class="pub-title">
-          ReSS: Learning Reasoning Models for Tabular Data Prediction via Symbolic Scaffold
+          <a href="https://arxiv.org/abs/2604.13392" target="_blank" rel="noopener">
+            ReSS: Learning Reasoning Models for Tabular Data Prediction via Symbolic Scaffold
+          </a>
         </h3>
         <p class="pub-authors">
           Chenlang Yi, Gang Li, Zizhan Xiong, <strong>Tue M. Cao</strong>, Yanmin Gong, My T. Thai, Tianbao Yang
         </p>
         <p class="pub-venue">Under review at Neural Information Processing Systems (NeurIPS), 2026</p>
         <p class="pub-desc">
-          Faithful and explainable reasoning for tabular data prediction guided by decision trees.
-          Demonstrates that the generated reasoning traces are causally important, non-redundant, and less prone
-          to hallucination. Designed and evaluated faithfulness and causal sufficiency metrics.
+          Decision-tree-scaffolded reasoning traces for tabular prediction; I contributed the faithfulness
+          and causal-sufficiency metrics.
+          <strong>Result:</strong> up to 10% accuracy improvement on medical and financial benchmarks,
+          with reasoning traces shown to be causally load-bearing rather than post-hoc rationalization.
         </p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2604.13392" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://arxiv.org/pdf/2604.13392" class="pub-link" target="_blank" rel="noopener">PDF</a>
+        </div>
       </article>
 
-      <!-- Multimodal Contrastive ECG — 2023 early work -->
       <article class="pub-item">
         <div class="pub-meta">
-          <span class="pub-badge pub-badge--preprint">arXiv Preprint</span>
-          <span class="pub-year">2023</span>
+          <span class="pub-badge pub-badge--review">IEEE T-ITS (Under Review)</span>
+          <span class="pub-year">2026</span>
         </div>
         <h3 class="pub-title">
-          <a href="https://arxiv.org/abs/2304.11080" target="_blank" rel="noopener">
-            Multimodal Contrastive Learning for Diagnosing Cardiovascular Diseases from ECG Signals and Patient Metadata
+          <a href="https://arxiv.org/abs/2606.17482" target="_blank" rel="noopener">
+            Sphinx: First Explain, Then Explore
           </a>
         </h3>
         <p class="pub-authors">
-          <strong>Tue M. Cao</strong>, Nhat H. Tran, Phi Le Nguyen, Hieu H. Pham
+          Nguyen Do, <strong>Tue M. Cao</strong>, Tien Van Do, András Hajdu, Tamás Bérczes, My T. Thai
         </p>
-        <p class="pub-venue">arXiv preprint, 2023 &middot; 3 citations</p>
+        <p class="pub-venue">Under review at IEEE Transactions on Intelligent Transportation Systems, 2026</p>
         <p class="pub-desc">
-          Multimodal contrastive learning approach combining ECG time-series signals with patient metadata
-          for improved cardiovascular disease diagnosis.
+          Explains the failure modes of autonomous driving models — indecisiveness, incorrect visual
+          grounding, and inconsistency between frames — then automatically generates critical scenarios
+          from those failure modes to improve the model.
+          <strong>Result:</strong> driving success rate above 80% across multiple models, more than 30%
+          over prior state of the art.
         </p>
         <div class="pub-links">
-          <a href="https://arxiv.org/abs/2304.11080" class="pub-link" target="_blank" rel="noopener">arXiv</a>
-          <a href="https://arxiv.org/pdf/2304.11080" class="pub-link" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.17482" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://arxiv.org/pdf/2606.17482" class="pub-link" target="_blank" rel="noopener">PDF</a>
         </div>
-      </article>
-
-      <!-- IncepSE — ISIC 2023 -->
-      <article class="pub-item">
-        <div class="pub-meta">
-          <span class="pub-badge pub-badge--early">ISIC 2023</span>
-          <span class="pub-year">2023</span>
-        </div>
-        <h3 class="pub-title">
-          IncepSE: Leveraging InceptionTime's Performance with Squeeze-and-Excitation Mechanism in ECG Analysis
-        </h3>
-        <p class="pub-authors">
-          <strong>Tue M. Cao</strong>, Nhat H. Tran, Le P. Nguyen, H. Nguyen, Hieu H. Pham
-        </p>
-        <p class="pub-venue">12th International Symposium on Information and Communications (ISIC), 2023 &middot; 4 citations</p>
-        <p class="pub-desc">
-          Integrates squeeze-and-excitation channel attention into InceptionTime for ECG classification,
-          improving performance on arrhythmia detection benchmarks.
-        </p>
       </article>
 
     </div>
+
+    <!-- Earlier work, collapsed by default -->
+    <details class="earlier-work">
+      <summary>Earlier work &middot; ECG and medical machine learning (2023)</summary>
+      <div class="pub-list">
+
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="pub-badge pub-badge--preprint">arXiv Preprint</span>
+            <span class="pub-year">2023</span>
+          </div>
+          <h3 class="pub-title">
+            <a href="https://arxiv.org/abs/2304.11080" target="_blank" rel="noopener">
+              Multimodal Contrastive Learning for Diagnosing Cardiovascular Diseases from ECG Signals and Patient Metadata
+            </a>
+          </h3>
+          <p class="pub-authors">
+            <strong>Tue M. Cao</strong>, Nhat H. Tran, Phi Le Nguyen, Hieu H. Pham
+          </p>
+          <p class="pub-venue">arXiv preprint, 2023</p>
+          <p class="pub-desc">
+            Adds a similarity term between 12-lead and reduced-lead ECG embeddings to the contrastive loss,
+            improving diagnosis performance across all lead combinations.
+          </p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2304.11080" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="pub-badge pub-badge--early">ISIC 2023</span>
+            <span class="pub-year">2023</span>
+          </div>
+          <h3 class="pub-title">
+            IncepSE: Leveraging InceptionTime's Performance with Squeeze-and-Excitation Mechanism in ECG Analysis
+          </h3>
+          <p class="pub-authors">
+            <strong>Tue M. Cao</strong>, Nhat H. Tran, Phi Le Nguyen, H. Nguyen, Hieu H. Pham
+          </p>
+          <p class="pub-venue">12th International Symposium on Information and Communications (ISIC), 2023</p>
+          <p class="pub-desc">
+            Integrates squeeze-and-excitation channel attention into InceptionTime for ECG classification.
+          </p>
+        </article>
+
+      </div>
+    </details>
   </div>
 </section>
 
@@ -442,6 +531,57 @@
   </div>
 </section>
 
+<!-- ── Honors ────────────────────────────────────────────── -->
+<section id="honors">
+  <div class="container">
+    <p class="section-label">Recognition</p>
+    <h2 class="section-title">Honors &amp; Awards</h2>
+
+    <div class="awards-list">
+      <div class="award-item">
+        <span class="award-year">2022</span>
+        <span class="award-text">
+          <strong>2nd place, Linear Algebra</strong> — National Mathematical Olympiad for University
+          Students, Vietnam Mathematical Society
+        </span>
+      </div>
+      <div class="award-item">
+        <span class="award-year">2022</span>
+        <span class="award-text">
+          <strong>2nd place, Calculus</strong> — National Mathematical Olympiad for University
+          Students, Vietnam Mathematical Society
+        </span>
+      </div>
+      <div class="award-item">
+        <span class="award-year">2021</span>
+        <span class="award-text">
+          <strong>National team selection participant</strong>, International Physics Olympiad —
+          Ministry of Education, Vietnam
+        </span>
+      </div>
+      <div class="award-item">
+        <span class="award-year">2021</span>
+        <span class="award-text">
+          <strong>2nd place</strong>, National Physics Olympiad — Ministry of Education, Vietnam
+        </span>
+      </div>
+      <div class="award-item">
+        <span class="award-year">2020</span>
+        <span class="award-text">
+          <strong>3rd place</strong>, National Physics Olympiad — Ministry of Education, Vietnam
+        </span>
+      </div>
+      <div class="award-item">
+        <span class="award-year">2019</span>
+        <span class="award-text">
+          <strong>1st place</strong>, Coastal Provinces &amp; Northern Vietnam High School
+          Competition in Physics
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ── Footer ────────────────────────────────────────────── -->
 <footer>
   <div class="footer-inner">
@@ -451,6 +591,7 @@
     <div class="footer-links">
       <a href="mailto:caotue@ufl.edu">Email</a>
       <a href="https://scholar.google.com/citations?user=fQE5GQgAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://www.linkedin.com/in/tuecm/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.lesswrong.com/users/tue-minh-cao" target="_blank" rel="noopener">LessWrong</a>
       <a href="assets/cv.pdf" download>CV</a>
     </div>

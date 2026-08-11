@@ -465,6 +465,68 @@ section + section { border-top: 1px solid var(--border); }
   text-decoration: none;
 }
 
+/* Earlier work — collapsed publication group */
+.earlier-work {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.earlier-work > summary {
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  transition: color 0.15s;
+}
+.earlier-work > summary::-webkit-details-marker { display: none; }
+.earlier-work > summary:hover { color: var(--accent); }
+
+/* Disclosure triangle that rotates when open */
+.earlier-work > summary::before {
+  content: '';
+  width: 0; height: 0;
+  border-left: 5px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+.earlier-work[open] > summary::before { transform: rotate(90deg); }
+.earlier-work[open] > summary { margin-bottom: 0.5rem; }
+
+.earlier-work .pub-item:first-child { padding-top: 1.5rem; }
+
+/* 8b. Honors & Awards
+   ========================================================================== */
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.award-item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1.5rem;
+  align-items: baseline;
+}
+
+.award-year {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.award-text { font-size: 0.9375rem; line-height: 1.6; color: var(--text-muted); }
+.award-text strong { color: var(--text); font-weight: 600; }
+
 /* 9. Blog
    ========================================================================== */
 .blog-intro {
@@ -970,6 +1032,7 @@ footer {
   .blog-grid { grid-template-columns: 1fr; }
   .mentees-grid { grid-template-columns: 1fr; }
   .news-item { grid-template-columns: 1fr; gap: 0.125rem; }
+  .award-item { grid-template-columns: 1fr; gap: 0.125rem; }
 
   section { padding: 3rem 0; }
   #about { padding-top: calc(3rem + 1.5rem); }
